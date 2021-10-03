@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import {Home, OnBoarding, About, Movies,Art, Food, Product, ProductDetails,MoviesDetails, Dinner, DinnerDetails, Login, Register} from '../screens'
 import Tabs from '../drawerNavigator/drawerTabs'
 import {createSharedElementStackNavigator} from 'react-navigation-shared-element'
@@ -9,6 +9,7 @@ enableScreens();
 const Stack = createSharedElementStackNavigator()
 
 const AppNavigation = () => {
+
     return (
             <Stack.Navigator
                 screenOptions={{headerShown: false}}
